@@ -2,7 +2,7 @@
 
 Una aplicación web para contar pasajeros en el metro en tiempo real. Este proyecto es la introducción práctica a JavaScript: conectar lógica de programación con una interfaz HTML ya construida.
 
-![App screenshot](./02.%20Let's%20build%20a%20passenger%20counter%20app/station.jpg)
+![App screenshot](./Counter-Passenger-App.png)
 
 ## Resultado Final
 
