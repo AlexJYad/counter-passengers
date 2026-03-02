@@ -83,17 +83,17 @@ El HTML de la aplicación está ya construido. Antes de escribir nada en JavaScr
 
 ```html
 <html>
-  <head>
-    <link rel="stylesheet" href="index.css" />
-  </head>
-  <body>
-    <h1>People entered:</h1>
-    <h2 id="count-el">0</h2>
-    <button id="increment-btn" onclick="increment()">INCREMENT</button>
-    <button id="save-btn" onclick="save()">SAVE</button>
-    <p id="save-el">Previous entries:</p>
-    <script src="index.js"></script>
-  </body>
+   <head>
+      <link rel="stylesheet" href="index.css" />
+   </head>
+   <body>
+      <h1>People entered:</h1>
+      <h2 id="count-el">0</h2>
+      <button id="increment-btn" onclick="increment()">INCREMENT</button>
+      <button id="save-btn" onclick="save()">SAVE</button>
+      <p id="save-el">Previous entries:</p>
+      <script src="index.js"></script>
+   </body>
 </html>
 ```
 
@@ -174,8 +174,8 @@ Las funciones agrupan código que se puede ejecutar varias veces. Crea la funci�
 let count = 0;
 
 function increment() {
-  count = count + 1;
-  console.log(count);
+   count = count + 1;
+   console.log(count);
 }
 ```
 
@@ -217,8 +217,8 @@ let count = 0;
 let countEl = document.getElementById("count-el");
 
 function increment() {
-  count = count + 1;
-  countEl.textContent = count;
+   count = count + 1;
+   countEl.textContent = count;
 }
 ```
 
@@ -242,8 +242,8 @@ Actualiza tu función:
 
 ```js
 function increment() {
-  count += 1;
-  countEl.textContent = count;
+   count += 1;
+   countEl.textContent = count;
 }
 ```
 
@@ -305,10 +305,10 @@ Luego escribe la función:
 
 ```js
 function save() {
-  let countStr = count + " - ";
-  saveEl.textContent += countStr;
-  countEl.textContent = 0;
-  count = 0;
+   let countStr = count + " - ";
+   saveEl.textContent += countStr;
+   countEl.textContent = 0;
+   count = 0;
 }
 ```
 
@@ -327,21 +327,21 @@ function save() {
 
 ```html
 <html>
-  <head>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
-    />
-    <link rel="stylesheet" href="index.css" />
-  </head>
-  <body>
-    <h1>People entered:</h1>
-    <h2 id="count-el">0</h2>
-    <button id="increment-btn" onclick="increment()">INCREMENT</button>
-    <button id="save-btn" onclick="save()">SAVE</button>
-    <p id="save-el">Previous entries:</p>
-    <script src="index.js"></script>
-  </body>
+   <head>
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+      />
+      <link rel="stylesheet" href="index.css" />
+   </head>
+   <body>
+      <h1>People entered:</h1>
+      <h2 id="count-el">0</h2>
+      <button id="increment-btn" onclick="increment()">INCREMENT</button>
+      <button id="save-btn" onclick="save()">SAVE</button>
+      <p id="save-el">Previous entries:</p>
+      <script src="index.js"></script>
+   </body>
 </html>
 ```
 
@@ -353,15 +353,15 @@ let saveEl = document.getElementById("save-el");
 let countEl = document.getElementById("count-el");
 
 function increment() {
-  count += 1;
-  countEl.textContent = count;
+   count += 1;
+   countEl.textContent = count;
 }
 
 function save() {
-  let countStr = count + " - ";
-  saveEl.textContent += countStr;
-  countEl.textContent = 0;
-  count = 0;
+   let countStr = count + " - ";
+   saveEl.textContent += countStr;
+   countEl.textContent = 0;
+   count = 0;
 }
 ```
 

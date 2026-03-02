@@ -1,38 +1,64 @@
+:root {
+   --red: rgb(195, 79, 16);
+   --dark-red: darkred;
+   --green: rgb(10, 136, 73);
+   --dark-green: darkgreen;
+}
+
 body {
-    background-image: url("station.jpg");
-    background-size: cover;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: bold;
-    text-align: center;
+   background-image: url("station.jpg");
+   background-size: cover;
+   font-family:
+      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+      Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+   font-weight: bold;
+   text-align: center;
 }
 
 h1 {
-    margin-top: 10px;
-    margin-bottom: 10px;
+   margin-top: 10px;
+   margin-bottom: 10px;
 }
 
 h2 {
-    font-size: 50px;
-    margin-top: 0;
-    margin-bottom: 20px;
+   font-size: 50px;
+   margin-top: 0;
+   margin-bottom: 20px;
+}
+
+.flex {
+   display: flex;
+   justify-content: center;
+   text-align: justify;
 }
 
 button {
-    border: none;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: white;
-    font-weight: bold;
-    width: 200px;
-    margin-bottom: 5px;
-    border-radius: 5px;
+   border: none;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   color: white;
+   font-weight: bold;
+   width: 200px;
+   margin-bottom: 5px;
+   border-radius: 5px;
+}
+
+button:hover {
+   transform: scale(0.95);
 }
 
 #increment-btn {
-    background: darkred;
+   background: var(--green);
+}
+
+#decrement-btn {
+   background: var(--red);
 }
 
 #save-btn {
-    background: darkgreen;
+   background: var(--dark-green);
 }
 
+#reset-btn {
+   background: var(--dark-red);
+}
